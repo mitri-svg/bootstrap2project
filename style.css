@@ -1,0 +1,157 @@
+body,html{
+    height: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+.a{
+    position: fixed;
+    width: 100%;
+    opacity: 80%;
+}
+.a1{
+    width: 25%;
+    float: left;
+}
+.a2{
+    width: 25%;
+    float: left;
+}
+.a3{
+    width: 25%;
+    float: left;
+}
+.a4{
+    width: 25%;
+    float: left;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: 1.7em;
+    background-color: lavender;
+}
+.logo{
+    background-size: cover;
+    background-image: url(tools_logo.jpeg);
+    display: flex;
+    width: 450px;
+    margin: auto;
+    height: 450px;
+}
+@media (max-width : 1200px){
+    .logo{
+        height: 300px;
+        width: 300px;
+        margin: auto;
+    }
+}
+.tool{
+    height: 400px;
+    background-size: cover;
+}
+.tool1{
+    background-image: url(tools1.jpg);
+}
+.tool2{
+    background-image: url(tools3.jpg);
+    height: 500px;
+}
+.tool3{
+    background-image: url(tools2.jpg);
+
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: lavender;
+}
+.box{
+    width: 33.3%;
+    height: 400px;
+    justify-content: space-around;
+    background-color: lavender;
+}
+.boxx{
+    width: 33.3%;
+    height: 500px;
+    justify-content: space-around;
+    background-color: lavender;
+}
+main{
+    display: flex;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: lavender;
+}
+.bbxx{
+    height: 580px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: lavender;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    opacity: 100%;
+}
+.box1{grid-area: box1;}
+.box2{grid-area: box2;}
+.box3{grid-area: box3;}
+@media (max-width : 900px){
+    main{
+        display: grid;
+        grid-template-areas: 
+        'box1 box1 box1 box1'
+        'box2 box2 box2 box2'
+        'box3 box3 box3 box3'
+        ;
+    }
+    .box{
+        width: 96%;
+    }
+    main{
+        display: grid;
+        grid-template-areas: 
+        'box1 box1 box1 box1'
+        'box2 box2 box2 box2'
+        'box3 box3 box3 box3'
+        ;
+    }
+    .boxx{
+        width: 96%;
+    }
+    form{
+        display: flex;
+        margin: auto;
+        width: 95%;
+        flex-direction: column;
+    }
+}
+form{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
